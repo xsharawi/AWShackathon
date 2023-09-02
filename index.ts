@@ -26,6 +26,10 @@ const storage = multer.diskStorage({
 
 const upload = multer({storage})
 
+app.get('/health',(req,res)=>{
+    res.sendStatus(200);
+})
+
 app.post('/img', upload.single('file'),async (req,res)=>{
     if(!req.file){
         res.status(500).send('error uploading')
