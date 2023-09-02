@@ -1,0 +1,33 @@
+{
+  "name": "awshackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xsharawi/AWShackathon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xsharawi/AWShackathon/issues"
+  },
+  "homepage": "https://github.com/xsharawi/AWShackathon#readme",
+  "dependencies": {
+    "@aws-sdk/client-ec2": "^3.405.0",
+    "@aws-sdk/client-rekognition": "^3.405.0",
+    "@aws-sdk/client-s3": "^3.405.0",
+    "concurrently": "^8.2.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.0.1",
+    "typeorm": "^0.3.17",
+    "typescript": "^5.2.2"
+  }
+}
