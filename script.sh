@@ -7,6 +7,8 @@ apt install jq -y
 curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
 sudo apt install nodejs curl -y
 
+curl -O "https://raw.githubusercontent.com/xsharawi/AWShackathon/master/app.service" && sudo mv app.service /etc/systemd/system/
+
 REPO='xsharawi/AWShackathon'
 
 download_url=$(curl "https://api.github.com/repos/$REPO/releases/latest" | jq --raw-output '.assets[0].browser_download_url')
